@@ -2,6 +2,7 @@ from itertools import *
 
 
 def partition(n, coll):
+    "Group collection into sequences of size n"
     it = iter(coll)
     return iter(lambda: tuple(islice(it, n)), ())
 
